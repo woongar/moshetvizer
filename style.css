@@ -1,0 +1,294 @@
+
+body {
+    background-color:antiquewhite;
+    direction: rtl;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #2b2d42; ;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+/* logo */
+.logo {
+    width: 100px;
+    background-image: url(images/bread3.jpg);
+    background-size: cover;
+    color: white;
+    text-align: center;
+    text-shadow: lavenderblush;
+    text-shadow: 2px 2px black;
+    border-radius: 12%;
+    border:4px solid rgb(215, 215, 15);
+    position: absolute;
+ } 
+
+.header {
+    background-image: url(images/bread3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
+/* צור קשר fixed */
+
+.callnaw {
+    background-size: 100%;
+    width: 100px;
+    height: 100px;
+    margin-top: 0px;
+    position: fixed;
+    border: 1px solid black;
+}
+
+.contact-pic {
+    width: 100px;
+    height: 100px;
+}
+ 
+/* תפריט ניווט */
+
+.menue {
+    color: #2b2d42;
+}
+
+.menue-item {
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    padding: 5px;
+    text-shadow: 1px 2px 3px black;
+    
+}
+
+a:hover {
+    color: yellow;
+}
+
+.top-section {
+    margin-top: 50px;
+}
+
+/* אזור עליון */
+.top-article {  
+    text-align: center;
+    padding: 20px;
+    border: 1px solid black;
+}
+
+.internal-article p{
+    text-align: right;
+    padding: 10px;
+    /* color: aliceblue; */
+}
+
+.box-internal p {
+    text-align: right;
+}
+ 
+
+.top-img {
+    height:240px;
+}
+
+/* גלריית מוצרים */
+.products-galery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 50px;
+    
+}
+
+.box-img { 
+    flex: 1;
+    background-color: white;
+    border: 1px solid black;
+    text-align: center;
+    justify-content: space-between;
+    margin:10px; 
+    border-radius: 4%;
+    
+}
+
+ /* דיב פנימי box-img */
+.box-internal {
+    padding: 6px;
+    width: 130px;
+    margin: auto;
+ }
+/* הגדרות של התמונות box-img */
+ .box-img img {
+    height: 120px;
+    width: 120px
+ }
+
+
+/* footer */
+.footer {
+    margin-top: 55px;
+    background-color: #6d6875;
+}
+footer p {
+    width: 150px;
+    text-align: center;
+    display: inline-block;
+    margin: 10px auto;
+    color: white;
+}
+
+.internal-footer-box {  
+    border: 2px silid black;
+    display: flex;
+}
+
+
+
+.copyright {
+    padding-top: 30px;
+    width:100%;
+    margin: 5px auto;
+    color: white;
+}
+
+.adress {
+    text-align: center;
+    color: aliceblue;
+    margin-bottom: 50px;
+}
+
+.form {
+    text-align:center;
+    color: aliceblue;
+}
+
+.contact-h1 {
+   text-align: center;
+}
+
+/* media min 600px */
+@media (min-width:600px)  {
+    body {
+        background-color: darkkhaki;
+    }
+
+    .form {
+        text-align: right;
+        color: #2b2d42; 
+    }
+
+    .internal-article p {
+        color: black;
+    }
+}
+
+
+
+/* media min 800px */
+@media(min-width: 800px) {
+
+    body {
+        background-color: #6d6875
+    }
+
+    .header {
+        height: 200px;
+    }
+
+    .menue { 
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .menue-item {
+        flex: 1;
+        flex-direction:row;
+    }
+
+    .logo {
+        margin-top: 40px;
+    }
+
+    .top-article {
+        display: flex;
+        align-content: center;
+    }
+
+    .contact-h1 {
+        text-align: left;
+    }
+
+  
+
+    .internal-article {
+        flex:1;
+    }
+
+
+    .top-img {
+        flex: 1;
+        background-color: crimson;
+        align-self: center;
+    }
+
+    .form {
+        text-align: center;
+    }
+}
+/* media min 1200px */
+@media (min-width: 1200px) {
+    body {
+        background-color: cadetblue;
+    }
+
+    .header {
+        height: 200px;
+        
+    }
+
+    .menue {
+        
+        display: flex;
+    }
+    
+    .menue-item {
+        flex: 1;
+        flex-direction:row;
+    }
+
+    .internal-article {
+        width:50%;
+        margin-right: 10px;
+        line-height: 30px;
+        word-spacing: 5px;
+        display: inline-block;
+        padding-left: 20px;
+    }
+
+    
+     .top-img {
+    height:350px;
+    display: inline-block;
+    }
+
+    .box-img {
+        flex: 1;
+        margin: 30px 60px;
+    }
+
+    .form {
+        text-align: left;
+    }
+}
+
+
